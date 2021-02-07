@@ -1,0 +1,11 @@
+extends layout 
+
+block content
+    .login 
+        h1.heading Login to the App
+        form.form(action="/login" method="POST")
+            label(for="email") Email Address 
+            input#email(type="email" name="email")
+            label(for="pass") Password
+            input#pass(type="password" name="password")
+            button.btn(type="submit") Login
